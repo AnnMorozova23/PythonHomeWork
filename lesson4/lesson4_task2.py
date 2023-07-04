@@ -6,5 +6,3 @@ some_string = input('enter some words: ')
 helper = list(some_string)
 value = {i: helper.count(i) for i in helper}
 print(value)
-
-

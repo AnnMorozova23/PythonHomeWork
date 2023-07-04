@@ -5,7 +5,7 @@
 n = int(input("Enter n: "))
 
 some_dict = {}
-for i in range(n+1):
+for i in range(n + 1):
     name = input(f'Enter name for key {i}: ')
     email = input(f'Enter email for key{i}: ')
     some_dict[i] = {"name": name, "email": email}
