@@ -13,7 +13,7 @@ some_dict_2 = {
 }
 
 some_dict_3 = {
-    'price': 15,
+    'price': 45,
     'name': 'book_2'
 }
 
@@ -22,10 +22,7 @@ books = [some_dict_1, some_dict_2, some_dict_3]
 prices = []
 
 for i in books:
-    keys = i.keys()
-    key_list = list(keys)
-    if key_list[0] == 'price':
+    if i.get('price'):
         prices.append(i.get('price'))
-
 result = sum(prices) / len(prices)
 print(result)

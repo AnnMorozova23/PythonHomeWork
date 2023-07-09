@@ -28,8 +28,7 @@ books = [some_dict_1, some_dict_2, some_dict_3]
 for i in books:
     if i['category_id'] == 1:
         books.remove(i)
-for i in books:
-    if i['category_id'] == 2:
+    elif i['category_id'] == 2:
         new = i.get('price') * 0.95
         i['price'] = round(new, 2)
 print(books)
